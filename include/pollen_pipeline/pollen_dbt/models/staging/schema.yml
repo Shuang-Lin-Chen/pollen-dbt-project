@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_pollen_forecast
+    description: "Flattened pollen forecast data transformed from raw JSON payloads."
+    columns:
+      - name: raw_record_id
+        description: "ID of the raw JSON record in raw.pollen_forecast_json."
+        tests:
+          - not_null
+
+      - name: region
+        description: "Forecast region."
+        tests:
+          - not_null
+
+      - name: forecast_time
+        description: "Forecast timestamp converted into Snowflake timestamp."
+        tests:
+          - not_null

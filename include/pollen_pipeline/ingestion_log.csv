@@ -1,0 +1,4 @@
+ingested_at,status_code,status,file_path,region_count,pollen_record_count
+2026-05-19T13:25:22.086518,"200,200,200,200",SUCCESS,raw_data/ingestion_date=2026-05-19/pollen_forecast_20260519_132522.json,4,384
+2026-05-19T13:25:31.217059,"200,200,200,200",SKIPPED,,0,0
+2026-05-19T13:35:21.397478,"200,200,200,200",SKIPPED,,0,0

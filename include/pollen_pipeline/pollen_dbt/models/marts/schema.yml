@@ -1,0 +1,67 @@
+version: 2
+
+models:
+  - name: mart_pollen_daily_summary
+    description: "Daily analytics-ready summary of hourly pollen forecasts by region, based on Open-Meteo Air Quality API data."
+
+    columns:
+      - name: region
+        description: "Swedish city or region used for the pollen forecast."
+        tests:
+          - not_null
+
+      - name: forecast_date
+        description: "Forecast calendar date."
+        tests:
+          - not_null
+
+      - name: latitude
+        description: "Latitude of the forecast location."
+        tests:
+          - not_null
+
+      - name: longitude
+        description: "Longitude of the forecast location."
+        tests:
+          - not_null
+
+      - name: avg_alder_pollen
+        description: "Average alder pollen concentration for the region and forecast date."
+
+      - name: max_alder_pollen
+        description: "Maximum alder pollen concentration for the region and forecast date."
+
+      - name: avg_birch_pollen
+        description: "Average birch pollen concentration for the region and forecast date."
+
+      - name: max_birch_pollen
+        description: "Maximum birch pollen concentration for the region and forecast date."
+
+      - name: avg_grass_pollen
+        description: "Average grass pollen concentration for the region and forecast date."
+
+      - name: max_grass_pollen
+        description: "Maximum grass pollen concentration for the region and forecast date."
+
+      - name: avg_mugwort_pollen
+        description: "Average mugwort pollen concentration for the region and forecast date."
+
+      - name: max_mugwort_pollen
+        description: "Maximum mugwort pollen concentration for the region and forecast date."
+
+      - name: avg_olive_pollen
+        description: "Average olive pollen concentration for the region and forecast date."
+
+      - name: max_olive_pollen
+        description: "Maximum olive pollen concentration for the region and forecast date."
+
+      - name: avg_ragweed_pollen
+        description: "Average ragweed pollen concentration for the region and forecast date."
+
+      - name: max_ragweed_pollen
+        description: "Maximum ragweed pollen concentration for the region and forecast date."
+
+      - name: hourly_record_count
+        description: "Number of hourly forecast records aggregated into the daily summary."
+        tests:
+          - not_null

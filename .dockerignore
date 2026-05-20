@@ -1,0 +1,15 @@
+astro
+.git
+.env
+airflow_settings.yaml
+logs/
+.venv
+dbt_env/
+airflow.db
+airflow.cfg
+
+__pycache__/
+*.pyc
+
+include/pollen_pipeline/pollen_dbt/logs/
+include/pollen_pipeline/pollen_dbt/target/

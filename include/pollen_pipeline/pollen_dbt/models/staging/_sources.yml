@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: POLLEN_DB
+    schema: RAW
+    tables:
+      - name: pollen_forecast_json
+        identifier: RAW_POLLEN
