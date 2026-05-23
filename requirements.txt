@@ -4,3 +4,4 @@ python-dotenv
 azure-storage-blob
 snowflake-connector-python
 dbt-snowflake
+cryptography

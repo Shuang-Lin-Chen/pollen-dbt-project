@@ -12,3 +12,14 @@ airflow-webserver.pid
 webserver_config.py
 airflow.cfg
 airflow.db
+
+# Secrets / keys
+rsa_key.p8
+rsa_key.pub
+*.pem
+*.key
+
+# Local data / logs
+raw_data/
+ingestion_log.csv
+logs/
